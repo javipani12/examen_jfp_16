@@ -24,23 +24,23 @@ class SignInScreen16 extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
               children: [
-                SizedBox(height: 50,),
-                FlutterLogo(size: 100),
-                SizedBox(height: 30,),
+                const SizedBox(height: 50,),
+                const FlutterLogo(size: 100),
+                const SizedBox(height: 30,),
                 CustomTextFormField(
                   hintText16: 'Example',
                   suffixIcon16: Icons.group,
                   formProperty16: 'usuario',
                   formValues16: formValues16,
                 ),
-                SizedBox(height: 30,),
+                const SizedBox(height: 30,),
                 CustomTextFormField(
                   hintText16: 'Example',
                   obscureText16: true,
                   formProperty16: 'password',
                   formValues16: formValues16,
                 ),
-                SizedBox(height: 30,),
+                const SizedBox(height: 30,),
                 ElevatedButton(
                   onPressed: () {
                     FocusScope.of(context).requestFocus(FocusNode());
@@ -51,9 +51,9 @@ class SignInScreen16 extends StatelessWidget {
                       Navigator.pushNamed(context, ListViewRoute.listViewRoute);
                     }
                   }, 
-                  child: SizedBox(
+                  child: const SizedBox(
                     width: double.infinity,
-                    child: Center(child: const Text('Sign In'))
+                    child: Center(child: Text('Sign In'))
                   ),
                 ),
                 FloatingActionButton(

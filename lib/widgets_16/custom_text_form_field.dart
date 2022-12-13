@@ -27,6 +27,7 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       autofocus: true,
       onChanged: (value) => formValues16[formProperty16] = value,
+      obscureText: obscureText16,
       validator: (value) {
         if(value!.length == 0) {
           return 'Nombre de usuario no válido';

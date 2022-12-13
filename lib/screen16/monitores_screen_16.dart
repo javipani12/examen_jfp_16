@@ -31,10 +31,10 @@ class MonitoresScreen extends StatelessWidget {
                 child: Column(
                   children: const [
                     SizedBox(height: 210,),
-                    Text('Rafa Nadal')
                   ],
                 )
               ),
+              const Text('Rafa Nadal'),
               const SizedBox(height: 30,),
               CircleAvatar(
                 maxRadius: 120,
@@ -42,10 +42,10 @@ class MonitoresScreen extends StatelessWidget {
                 child: Column(
                   children: const [
                     SizedBox(height: 210,),
-                    Text('Gisela Pulido')
                   ],
                 )
               ),
+              const Text('Gisela Pulido'),
               const SizedBox(height: 30,),
               CircleAvatar(
                 maxRadius: 120,
@@ -53,10 +53,10 @@ class MonitoresScreen extends StatelessWidget {
                 child: Column(
                   children: const [
                     SizedBox(height: 210,),
-                    Text('Raúl González')
                   ],
                 )
               ),
+              const Text('Raúl González'),
               const SizedBox(height: 30,),
               CircleAvatar(
                 maxRadius: 120,
@@ -64,10 +64,10 @@ class MonitoresScreen extends StatelessWidget {
                 child: Column(
                   children: const [
                     SizedBox(height: 210,),
-                    Text('Mireia Belmonte')
                   ],
                 )
               ),
+              const Text('Mireia Belmonte'),
               const SizedBox(height: 30,),
             ],
           ),

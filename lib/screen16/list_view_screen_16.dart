@@ -23,13 +23,13 @@ class ListViewScreen16 extends StatelessWidget {
       ),
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
-          title: Text(ListViewSub.ListViewSub16[index].name),
+          title: Text(ListViewSub.listViewSub16[index].name),
           onTap: () {
-            Navigator.pushNamed(context, ListViewSub.ListViewSub16[index].route);
+            Navigator.pushNamed(context, ListViewSub.listViewSub16[index].route);
           },
         ),
         separatorBuilder: (context, index) => const Divider(), 
-        itemCount: ListViewSub.ListViewSub16.length
+        itemCount: ListViewSub.listViewSub16.length
       ),
     );
   }

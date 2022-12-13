@@ -8,7 +8,7 @@ import 'package:examen_jfp_16/models16/models_16.dart';
 class AppRoutes {
   static const initialRoute16 = 'home';
 
-  static final MenuOptions16 = <MenuOption> [
+  static final menuOptions16 = <MenuOption> [
 
     MenuOption(
       route: 'home', 
@@ -22,11 +22,11 @@ class AppRoutes {
 
     Map<String, Widget Function(BuildContext)> appRoutes = {};
 
-    for (final option in MenuOptions16) {
+    for (final option in menuOptions16) {
       appRoutes.addAll({option.route: (BuildContext context ) => option.screen});
     }
 
-    for (final option in SignInRotue.SignInRouteOption16) {
+    for (final option in SignInRotue.signInRouteOption16) {
       appRoutes.addAll({option.route: (BuildContext context ) => option.screen});
     }
 
@@ -34,7 +34,7 @@ class AppRoutes {
       appRoutes.addAll({option.route: (BuildContext context ) => option.screen});
     }
 
-    for (final option in ListViewSub.ListViewSub16) {
+    for (final option in ListViewSub.listViewSub16) {
       appRoutes.addAll({option.route: (BuildContext context ) => option.screen});
     }
 
