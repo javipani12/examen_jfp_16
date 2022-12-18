@@ -44,7 +44,7 @@ class CustomCard extends StatelessWidget {
             child: Container(
               alignment: AlignmentDirectional.centerEnd,
               padding: const EdgeInsets.only(top: 10, bottom: 10, right: 10),
-              child: const Text('Reservar')
+              child: const Text('Reservar', style: TextStyle(decoration: TextDecoration.underline),)
             ),
           ),
           
