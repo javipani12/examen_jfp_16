@@ -1,4 +1,4 @@
-import 'package:examen_jfp_16/routes16/sign_in_route_16.dart';
+import 'package:examen_jfp_16/routes16/sign_in_up_route_16.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen16 extends StatelessWidget {
@@ -15,16 +15,16 @@ class HomeScreen16 extends StatelessWidget {
             const FlutterLogo(size: 150,),
             const SizedBox(height: 50,),
             ElevatedButton(
-              onPressed: () => Navigator.pushNamed(context, SignInRotue.signInRoute16), 
+              onPressed: () => Navigator.pushNamed(context, SignInUpRoute.signInRoute16), 
               child: const Padding(
                 padding: EdgeInsets.all(20.0),
                 child: Text('Sign in', style: TextStyle(fontSize: 20),),
               )
             ),
             const SizedBox(height: 20,),
-            const ElevatedButton(
-              onPressed: null, 
-              child: Padding(
+            ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, SignInUpRoute.signUpRoute16), 
+              child: const Padding(
                 padding: EdgeInsets.all(20.0),
                 child: Text('Sign up', style: TextStyle(fontSize: 20),),
               )

@@ -13,7 +13,7 @@ class AppRoutes {
       name: 'Inicio', 
       icon: Icons.home,
       screen: const HomeScreen16()
-    )
+    ),
 
   ];
 
@@ -25,7 +25,7 @@ class AppRoutes {
       appRoutes.addAll({option.route: (BuildContext context ) => option.screen});
     }
 
-    for (final option in SignInRotue.signInRouteOption16) {
+    for (final option in SignInUpRoute.signInRouteOption16) {
       appRoutes.addAll({option.route: (BuildContext context ) => option.screen});
     }
 
