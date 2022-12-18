@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color primary16 = Colors.lightBlue;
+  static const Color primary16 = Colors.lightGreen;
 
   static final ThemeData lightTheme16 = ThemeData.light().copyWith(
 
@@ -13,6 +13,12 @@ class AppTheme {
 
     listTileTheme: const ListTileThemeData(
       iconColor: primary16,
+    ),
+
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        primary: primary16,
+      )
     ),
 
     elevatedButtonTheme: ElevatedButtonThemeData(

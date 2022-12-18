@@ -19,7 +19,6 @@ class SignInScreen16 extends StatelessWidget {
     return Scaffold(
       body: Form(
         key: myFormKey16,
-        child: Center(
           child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
@@ -56,15 +55,14 @@ class SignInScreen16 extends StatelessWidget {
                     child: Center(child: Text('Sign In'))
                   ),
                 ),
-                FloatingActionButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: const Icon(Icons.close),
-                ),
               ],
             ),
           ),
-        ),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Icon(Icons.close),
+                ),
     );
   }
 }
