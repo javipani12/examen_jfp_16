@@ -1,6 +1,6 @@
-import 'package:examen_jfp_16/widgets_16/custom_text_form_field_register.dart';
 import 'package:flutter/material.dart';
 import 'package:examen_jfp_16/widgets_16/widgets_16.dart';
+import 'package:examen_jfp_16/routes16/routes_16.dart';
 
 class SingUpScreen extends StatelessWidget {
    
@@ -73,7 +73,7 @@ class SingUpScreen extends StatelessWidget {
                       return;
                     } else {
                       print(formValues16);
-                      Navigator.pop(context);
+                      Navigator.pushNamed(context, ListViewRoute.listViewRoute);
                     }
                   }, 
                   child: const SizedBox(
