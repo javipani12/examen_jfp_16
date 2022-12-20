@@ -16,7 +16,7 @@ class ListViewScreen16 extends StatelessWidget {
             padding: EdgeInsets.only(right: 10.0),
             child: CircleAvatar(
                 maxRadius: 20,
-                backgroundImage: NetworkImage('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f8/Peter_Parker.png/revision/latest?cb=20220420040648&path-prefix=es'),
+                backgroundImage: NetworkImage('https://img.europapress.es/fotoweb/fotonoticia_20220720184850_420.jpg'),
               
             ),
           ),

@@ -1,3 +1,4 @@
+import 'package:examen_jfp_16/widgets_16/custom_card_reservas.dart';
 import 'package:flutter/material.dart';
 
 class ReservasScreen extends StatelessWidget {
@@ -6,6 +7,12 @@ class ReservasScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+
+    final String year = DateTime.now().year.toString();
+    final String month = DateTime.now().month.toString();
+    final String day = DateTime.now().day.toString();
+
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Reservas'),
@@ -14,15 +21,16 @@ class ReservasScreen extends StatelessWidget {
             padding: EdgeInsets.only(right: 10.0),
             child: CircleAvatar(
                 maxRadius: 20,
-                backgroundImage: NetworkImage('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/f/f8/Peter_Parker.png/revision/latest?cb=20220420040648&path-prefix=es'),
+                backgroundImage: NetworkImage('https://img.europapress.es/fotoweb/fotonoticia_20220720184850_420.jpg'),
               
             ),
           ),
         ],
       ),
-      body: Column(
-        children: [
-          
+      body: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        children: const [
+          CustomCardReservas(),
         ],
       )
     );

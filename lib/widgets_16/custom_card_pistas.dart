@@ -1,12 +1,12 @@
 import 'package:examen_jfp_16/theme16/app_theme_16.dart';
 import 'package:flutter/material.dart';
 
-class CustomCard extends StatelessWidget {
+class CustomCardPistas extends StatelessWidget {
 
   final String url;
   final String? texto;
 
-  const CustomCard({super.key, required this.url, this.texto});
+  const CustomCardPistas({super.key, required this.url, this.texto});
 
   @override
   Widget build(BuildContext context) {
