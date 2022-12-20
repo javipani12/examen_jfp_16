@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CustomCardReservas extends StatefulWidget {
+class CustomCardReservasBoton extends StatefulWidget {
 
-  const CustomCardReservas({Key? key}) : super(key: key);
+  const CustomCardReservasBoton({Key? key}) : super(key: key);
 
   @override
-  State<CustomCardReservas> createState() => _CustomCardReservasState();
+  State<CustomCardReservasBoton> createState() => _CustomCardReservasBotonState();
 }
 
-class _CustomCardReservasState extends State<CustomCardReservas> {
+class _CustomCardReservasBotonState extends State<CustomCardReservasBoton> {
 
   String _textoBoton = 'Reservar ya';
   Color _color = Colors.orange;

@@ -1,4 +1,5 @@
-import 'package:examen_jfp_16/widgets_16/custom_card_reservas.dart';
+import 'package:examen_jfp_16/main.dart';
+import 'package:examen_jfp_16/widgets_16/widgets_16.dart';
 import 'package:flutter/material.dart';
 
 class ReservasScreen extends StatelessWidget {
@@ -7,11 +8,6 @@ class ReservasScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-
-    final String year = DateTime.now().year.toString();
-    final String month = DateTime.now().month.toString();
-    final String day = DateTime.now().day.toString();
-
 
     return Scaffold(
       appBar: AppBar(
@@ -30,7 +26,9 @@ class ReservasScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         children: const [
-          CustomCardReservas(),
+          CustomCardReservasDia(),
+          SizedBox(height: 10,),
+          CustomCardReservasBoton(),
         ],
       )
     );

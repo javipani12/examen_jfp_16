@@ -1,4 +1,5 @@
 export 'package:examen_jfp_16/widgets_16/custom_text_form_field.dart';
 export 'package:examen_jfp_16/widgets_16/custom_card_pistas.dart';
 export 'package:examen_jfp_16/widgets_16/custom_text_form_field_register.dart';
-export 'package:examen_jfp_16/widgets_16/custom_card_reservas.dart';
+export 'package:examen_jfp_16/widgets_16/custom_card_reservas_boton.dart';
+export 'package:examen_jfp_16/widgets_16/custom_card_reservas_dia.dart';
